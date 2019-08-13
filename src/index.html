@@ -1,0 +1,18 @@
+@@include('./includes/helmet.html', {
+	"title": "GoPablo",
+	"description": "A simple workflow for static websites with live-reload local server, Babel transpiler for JavaScript and bundling CSS with PostCSS and CSSNext.",
+	"headerJS": "header-bundle.js",
+	"socials": {
+		"title": "GoPablo",
+		"thumbnail": "",
+		"url": "https://gopablo.co/",
+		"author": "http://facebook.com/luangjokaj"
+	}
+})
+
+	@@include('./includes/header.html')
+	@@include('./includes/content.html')
+
+@@include('./includes/footer.html', {
+	"footerJS": "footer-bundle.js"
+})

@@ -1,0 +1,30 @@
+# Distribution Files
+dist/
+build/
+
+# IDE & Editors
+.idea
+.vscode
+*.iml
+
+# OSX
+*.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.lnk
+
+# Debug log from npm
+npm-debug.log
+
+node_modules
+
+*.map
+*.log
+
+*.awcache
