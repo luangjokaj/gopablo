@@ -1,6 +1,6 @@
 const header = $('#header');
 
-$(window).on('load', function () {
+$(window).on('load', () => {
 	WebFont.load({
 		google: {
 			families: ["Roboto:100,300,400,700"]

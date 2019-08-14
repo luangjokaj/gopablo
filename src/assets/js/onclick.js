@@ -1,4 +1,4 @@
-$('a').click(function (event) {
+$('a').click((event) => {
 	let scrollOffset = 0;
 
 	if ($(this).is('a[href^="#"]') && $(this).attr('href').length >= 2) {
