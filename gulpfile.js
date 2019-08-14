@@ -228,11 +228,6 @@ function processImages() {
 			}),
 		)
 		.pipe(dest('./dist/assets/img'))
-		.on('end', () => {
-			gutil.beep();
-			gutil.log(filesGenerated);
-			gutil.log(thankYou);
-		});
 }
 
 function stylesProd() {
@@ -245,8 +240,13 @@ function stylesProd() {
 
 function bustCaches() {
 	return src(['./dist/**'])
-		.pipe(RevAll.revision({ dontRenameFile: [/^\/favicon.ico$/g, '.html'] }))
-		.pipe(dest('./dist'));
+		.pipe(RevAll.revision({ dontRenameFile: [/^\/favicon.ico$/g, '.html'] }))		
+		.pipe(dest('./dist'))
+		.on('end', () => {
+			gutil.beep();
+			gutil.log(filesGenerated);
+			gutil.log(thankYou);
+		});
 }
 
 exports.prod = series(
