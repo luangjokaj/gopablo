@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------------------------------
 
 GoPablo - Static site generator
-Contributors: Luan Gjokaj
+Contributors: Luan Gjokaj, Sherif Saleh
 
 -------------------------------------------------------------------------------------------------- */
 const { gulp, series, parallel, dest, src, watch } = require('gulp');
