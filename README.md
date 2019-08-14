@@ -1,7 +1,7 @@
 # [![GoPablo](src/assets/img/logo.svg)](https://www.gopablo.co/)
  [![Dependencies](https://david-dm.org/luangjokaj/gopablo/status.svg)](https://david-dm.org/luangjokaj/gopablo)
 
-[GoPablo](https://www.gopablo.co/) is a static site generator, with live-reload local server, next generation JavaScript compiled with Babel and bundling CSS with PostCSS and postcss-preset-env.
+[GoPablo](https://www.gopablo.co/) is a static site generator, with live-reload local server, next generation JavaScript compiled with Babel, bundling CSS with PostCSS and postcss-preset-env.
 
 |👇|Includes|
 |:-:|:---|
