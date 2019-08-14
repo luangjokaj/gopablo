@@ -41,7 +41,6 @@ npm run lint
 
 ### Builds distribution files for the app in production
 ```
-
 npm run prod
 ```
 Ready to deploy 🚀
