@@ -9,7 +9,7 @@
 		"start": "npm run prod && node server.js",
 		"dev": "gulp dev",
 		"prod": "gulp prod",
-		"lint:css": "stylelint ./src/**/*.css"
+		"lint": "stylelint ./src/**/*.css"
 	},
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
