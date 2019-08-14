@@ -220,7 +220,7 @@ function copyImagesProd() {
 }
 
 function processImages() {
-	return src(['./dist/assets/img/**', '!./dist/assets/img/**/*.ico'])
+	return src(['./dist/assets/img/**'])
 		.pipe(plumber({ errorHandler: onError }))
 		.pipe(
 			imagemin([imagemin.svgo({ plugins: [{ removeViewBox: true }] })], {
