@@ -16,7 +16,8 @@
 - [5. JavaScript ES6](#5-javascript-es6)
 	- [Write ES6 JavaScript](#write-es6-javascript)
 - [6. External Libraries](#6-external-libraries)
-- [7. Deploy](#7-deploy)
+- [7. Code Style Rules](#7-code-style-rules)
+- [8. Deploy](#8-deploy)
 	- [Heroku](#heroku)
 	- [Automated Netlify deployments](#automated-netlify-deployments)
 
@@ -305,7 +306,23 @@ You can include the scripts in the head of the page before the DOM is loaded by 
 
 A build restart is required for changes to take effect.
 
-# 7. Deploy
+# 7. Code Style Rules
+
+GoPablo comes with its own set of code style rules:
+
+```
+.stylelintrc
+```
+
+## Lint CSS
+
+Before pushing changes make sure you have clean and consistent CSS. Run [stylelint](https://stylelint.io/) with the command:
+```
+npm run lint
+```
+
+
+# 8. Deploy
 There are a lot of possiblities and different ways to deploy your static website. The most traditional one being: generating your distribution files and uploading them manually, usually FTP.
 
 ## Heroku
@@ -325,3 +342,12 @@ Netlify is a great service that can be used to deploy generated websites. All yo
 ---
 
 We are live 🌍
+
+---
+
+# Changelog
+**v0.0.1**
+- Meet GoPablo.
+
+# License
+MIT
