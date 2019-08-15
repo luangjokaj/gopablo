@@ -132,7 +132,7 @@ To generate your distribution files run the command:
 ```
 npm run prod
 ```
-The files will be generated in the `dist/` directory.
+The files will be generated in the `dist/` directory.
 
 # 3. CSS, PostCSS and Sass
 ## PostCSS
