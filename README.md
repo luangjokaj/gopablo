@@ -124,7 +124,7 @@ src/includes/
 For more information check out their documentation and examples: https://github.com/haoxins/gulp-file-include 
 
 ## New pages
-To create new pages, simply create a new .html files in the `src/` directory.
+To create new pages, simply create new .html files in the `src/` directory.
 
 ## Generate production files
 To generate your distribution files run the command:
