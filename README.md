@@ -48,7 +48,7 @@ Ready to deploy 🚀
 ---
 
 ## Introduction
-[GoPablo](https://www.gopablo.co/) is a static site generator, with live-reload local server, next generation JavaScript compiled with Babel, bundling CSS with PostCSS and postcss-preset-env.
+[GoPablo](https://www.gopablo.co/) is a static site generator, a modern development workflow with an integrated web server and auto-reload. CSS preprocessors and ES6 ready.
 
 ## Features
 
