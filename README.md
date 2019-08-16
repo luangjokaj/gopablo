@@ -48,7 +48,7 @@ Ready to deploy 🚀
 ---
 
 ## Introduction
-[GoPablo](https://www.gopablo.co/) is a static site generator with a modern development workflow, an integrated web server, auto-reload, CSS preprocessors and ES6 ready.
+[GoPablo](https://www.gopablo.co/) is a static site generator with a modern development workflow, integrated web server, auto-reload, CSS preprocessors, and ES6 ready.
 
 ## Features
 
