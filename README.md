@@ -48,7 +48,7 @@ Ready to deploy 🚀
 ---
 
 ## Introduction
-[GoPablo](https://www.gopablo.co/) is a static site generator, a modern development workflow with an integrated web server and auto-reload. CSS preprocessors and ES6 ready.
+[GoPablo](https://www.gopablo.co/) is a static site generator with a modern development workflow, an integrated web server, auto-reload, CSS preprocessors and ES6 ready.
 
 ## Features
 
@@ -67,7 +67,7 @@ Ready to deploy 🚀
 
 # 1. Installing Node
 
-GoPabloe requires Node v7.5+. This is the only global dependency. You can download Node **[here](https://nodejs.org/)**.
+GoPablo requires Node v7.5+. This is the only global dependency. You can download Node **[here](https://nodejs.org/)**.
 
 Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js’ package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 
