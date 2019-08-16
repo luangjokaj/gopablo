@@ -20,6 +20,7 @@
 - [8. Deploy](#8-deploy)
 	- [Heroku](#heroku)
 	- [Automated Netlify deployments](#automated-netlify-deployments)
+- [9. Audit and Page Speed](#9-audit-and-page-speed)
 
 ## TL;DR
 
@@ -320,7 +321,6 @@ Before pushing changes make sure you have clean and consistent CSS. Run [styleli
 npm run lint
 ```
 
-
 # 8. Deploy
 There are a lot of possiblities and different ways to deploy your static website. The most traditional one being: generating your distribution files and uploading them manually, usually FTP.
 
@@ -343,6 +343,10 @@ Netlify is a great service that can be used to deploy generated websites. All yo
 We are live 🌍
 
 ---
+
+# 9. Audit and Page Speed
+|![audit](https://i.imgur.com/8fHysOB.png)|![page-speed](https://i.imgur.com/QMQtKfp.png)|
+|:-:|:---|
 
 # Changelog
 **v0.0.1**
