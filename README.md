@@ -1,4 +1,4 @@
-# [![GoPablo](src/assets/img/logo.svg)](https://www.gopablo.co/)
+# [![GoPablo](https://raw.githubusercontent.com/luangjokaj/gopablo/master/src/assets/img/logo.svg?sanitize=true)](https://www.gopablo.co/)
  [![Dependencies](https://david-dm.org/luangjokaj/gopablo/status.svg)](https://david-dm.org/luangjokaj/gopablo)
 
 [GoPablo](https://www.gopablo.co/) a static site generator.
