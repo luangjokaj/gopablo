@@ -227,20 +227,20 @@ function processImages() {
 				verbose: true,
 			}),
 		)
-		.pipe(dest('./dist/assets/img'))
+		.pipe(dest('./dist/assets/img'));
 }
 
 function stylesProd() {
 	return src('./src/assets/css/styles.css')
 		.pipe(plumber({ errorHandler: onError }))
 		.pipe(postcss(pluginsProd))
-		.pipe(purgecss({content: ['./src/**/*.html']}))
+		.pipe(purgecss({ content: ['./src/**/*.html'], whitelist: ['aos-animate'] }))
 		.pipe(dest('./dist/assets/css'));
 }
 
 function bustCaches() {
 	return src(['./dist/**'])
-		.pipe(RevAll.revision({ dontRenameFile: [/^\/favicon.ico$/g, '.html'] }))		
+		.pipe(RevAll.revision({ dontRenameFile: [/^\/favicon.ico$/g, '.html'] }))
 		.pipe(dest('./dist'))
 		.on('end', () => {
 			gutil.beep();
