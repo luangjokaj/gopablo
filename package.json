@@ -4,7 +4,10 @@
 	"description": "Static site generator.",
 	"homepage": "https://www.gopablo.co",
 	"repository": "https://github.com/luangjokaj/gopablo",
-	"main": "gulpfile.js",
+	"main": "./installer/index.js",
+	"bin": {
+		"gopablo": "./installer/index.js"
+	},
 	"scripts": {
 		"start": "npm run prod && node server.js",
 		"dev": "gulp dev",

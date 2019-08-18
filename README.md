@@ -349,6 +349,10 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.0.2**
+- Run GoPablo globally from NPM.
+- Add `manifest.json`.
+
 **v0.0.1**
 - Meet GoPablo.
 
