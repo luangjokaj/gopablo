@@ -238,6 +238,10 @@ function stylesProd() {
 		.pipe(dest('./dist/assets/css'));
 }
 
+function copyEtcProd() {
+	return src('./src/etc/manifest.json').pipe(dest('./dist'));
+}
+
 function bustCaches() {
 	return src(['./dist/**'])
 		.pipe(RevAll.revision({ dontRenameFile: [/^\/favicon.ico$/g, '.html'] }))
@@ -258,6 +262,7 @@ exports.prod = series(
 	copyImagesProd,
 	processImages,
 	stylesProd,
+	copyEtcProd,
 	bustCaches,
 );
 
