@@ -352,6 +352,9 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.0.6**
+- 📦 NEW: Confirm installation directory.
+
 **v0.0.5**
 - 🚀 RELEASE: Check version with command: `gopablo -v`.
 
