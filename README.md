@@ -25,20 +25,21 @@
 - [9. Audit and Page Speed](#9-audit-and-page-speed)
 
 ## TL;DR
-### Install dependencies
+### Install GoPablo
 ```
-npm install
+sudo npm i gopablo -g
+```
+
+### Initialize project
+Run GoPablo to generate the file structure:
+```
+gopablo
 ```
 
 ### Runs the app in the development mode
 Build and open your browser to http://localhost:3000.
 ```
 npm run dev
-```
-
-### Linting JS & CSS
-```
-npm run lint
 ```
 
 ### Builds distribution files for the app in production
