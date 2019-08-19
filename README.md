@@ -36,13 +36,13 @@ Run GoPablo to generate the file structure:
 gopablo
 ```
 
-### Runs the app in the development mode
+### Run the app in development mode
 Build and open your browser to http://localhost:3000.
 ```
 npm run dev
 ```
 
-### Builds distribution files for the app in production
+### Build distribution files for the app in production
 ```
 npm run prod
 ```
