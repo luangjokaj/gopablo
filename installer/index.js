@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 /**
  * Main Installer for GoPablo
- *
  * Check the node version if above 8 then run the app.
+ * 
+ * Credits: 
+ * Ahmad Awais - https://twitter.com/MrAhmadAwais/
+ * Luan Gjokaj - https://twitter.com/luangjokaj/
  */
 
 'use strict';
@@ -20,7 +23,7 @@ if (8 > major) {
 			'You are running Node ' +
 				currentNodeVersion +
 				'.\n' +
-				'Install WPGulp requires Node 8 or higher. \n' +
+				'Install GoPablo requires Node 8 or higher. \n' +
 				'Kindly, update your version of Node.',
 		),
 	);

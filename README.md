@@ -7,6 +7,7 @@
 	- [Features](#features)
 - [1. Installing Node](#1-installing-node)
 - [2. Set Up Project](#2-set-up-project)
+	- [Install GoPablo from NPM](#Install GoPablo-from-npm)
 - [3. CSS, PostCSS and Sass](#3-css-postcss-and-sass)
 	- [PostCSS](#postcss)
 	- [Sass](#sass)
@@ -73,7 +74,7 @@ GoPablo requires Node v7.5+. This is the only global dependency. You can downloa
 Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js’ package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 
 # 2. Set Up Project
-## File Structure
+### File Structure
 ```
     ├── build/                   # Build files
     ├── dist/                    # Distribution files
@@ -96,6 +97,8 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
     └── README.md                # You are reading this
     └── server.js                # Express server
 ```
+
+## Install GoPablo from Repository
 To install GoPablo you need to clone the repository from GitHub:
 
 ```
@@ -117,6 +120,25 @@ npm install
 npm run dev
 ```
 
+## Install GoPablo from NPM
+To install GoPablo from NPM, run the command:
+```
+sudo npm i gopablo -g
+```
+
+**START GOPABLO**
+
+- Create a directory for the new website and from there run GoPablo to generate the file structure:
+```
+gopablo
+```
+
+**START WORKFLOW**
+
+- We are ready to start our development server with the command:
+```
+npm run dev
+```
 ## Templating and HTML Partials
 To avoid repetitive HTML code, GoPablo uses [gulp-file-include](https://github.com/haoxins/gulp-file-include). It has a simple templating synthax and allows to re-use chunks of code written in separate files. These partials are located in the directory:
 ```
@@ -349,6 +371,10 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.0.3**
+- Fix missing modules.
+- Improve documentation.
+
 **v0.0.2**
 - Run GoPablo globally from NPM.
 - Add `manifest.json`.
