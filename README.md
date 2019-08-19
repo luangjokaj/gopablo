@@ -7,8 +7,8 @@
 	- [Features](#features)
 - [1. Installing Node](#1-installing-node)
 - [2. Set Up Project](#2-set-up-project)
-	- [Install GoPablo from Repository](#install-gopablo-from-repository)
 	- [Install GoPablo from NPM](#install-gopablo-from-npm)
+	- [Install GoPablo from Repository](#install-gopablo-from-repository)
 - [3. CSS, PostCSS and Sass](#3-css-postcss-and-sass)
 	- [PostCSS](#postcss)
 	- [Sass](#sass)
@@ -97,6 +97,19 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
     └── server.js                # Express server
 ```
 
+## Install GoPablo from NPM
+To install GoPablo from NPM, run the command:
+```
+sudo npm i gopablo -g
+```
+
+**START GOPABLO**
+
+- Create a directory for the new website and from there run GoPablo to generate the file structure:
+```
+gopablo
+```
+
 ## Install GoPablo from Repository
 To install GoPablo you need to clone the repository from GitHub:
 ```
@@ -115,19 +128,6 @@ npm install
 - We are ready to start our development server with the command:
 ```
 npm run dev
-```
-
-## Install GoPablo from NPM
-To install GoPablo from NPM, run the command:
-```
-sudo npm i gopablo -g
-```
-
-**START GOPABLO**
-
-- Create a directory for the new website and from there run GoPablo to generate the file structure:
-```
-gopablo
 ```
 
 **START WORKFLOW**
