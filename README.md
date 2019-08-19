@@ -25,7 +25,6 @@
 - [9. Audit and Page Speed](#9-audit-and-page-speed)
 
 ## TL;DR
-
 ### Install dependencies
 ```
 npm install
@@ -54,7 +53,6 @@ Ready to deploy 🚀
 [GoPablo](https://www.gopablo.co/) is a static site generator with a modern development workflow, integrated web server, auto-reload, CSS preprocessors, and ES6 ready.
 
 ## Features
-
 |👇|Includes|
 |:-:|:---|
 |📦| Live Server|
@@ -69,7 +67,6 @@ Ready to deploy 🚀
 |🛎| Distribution Files|
 
 # 1. Installing Node
-
 GoPablo requires Node v7.5+. This is the only global dependency. You can download Node **[here](https://nodejs.org/)**.
 
 Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js’ package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
@@ -101,7 +98,6 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
 
 ## Install GoPablo from Repository
 To install GoPablo you need to clone the repository from GitHub:
-
 ```
 git clone https://github.com/luangjokaj/gopablo
 ```
@@ -116,7 +112,6 @@ npm install
 **START WORKFLOW**
 
 - We are ready to start our development server with the command:
-
 ```
 npm run dev
 ```
@@ -140,6 +135,7 @@ gopablo
 ```
 npm run dev
 ```
+
 ## Templating and HTML Partials
 To avoid repetitive HTML code, GoPablo uses [gulp-file-include](https://github.com/haoxins/gulp-file-include). It has a simple templating synthax and allows to re-use chunks of code written in separate files. These partials are located in the directory:
 ```
@@ -152,7 +148,6 @@ To create new pages, simply create new .html files in the `src/` directory.
 
 ## Generate production files
 To generate your distribution files run the command:
-
 ```
 npm run prod
 ```
@@ -165,7 +160,6 @@ By default GoPablo supports [PostCSS](http://postcss.org/), a similar preprocess
 **POSTCSS PLUGINS**
 
 GoPablo has two different sets of PostCSS plugins - one for the development environment (pluginsListDev) and one for the production task (pluginsListProd).
-
 ```javascript
 //--------------------------------------------------------------------------------------------------
 /* -------------------------------------------------------------------------------------------------
@@ -209,26 +203,22 @@ const pluginsProd = [
 **WRITING CSS**
 
 The starting point for CSS is the file:
-
 ```
 src/assets/css/styles.css
 ```
 
 ## Sass
 GoPablo is super flexible. You can install Sass and use it as the main CSS preprocessor:
-
 ```
 npm install gulp-sass --save-dev
 ````
 
 Include Sass in gulpfile.js:
-
 ```javascript
 const sass = require('gulp-sass');
 ````
 
 Change the gulp tasks stylesDev to:
-
 ```javascript
 function stylesDev() {
 	return src('./src/assets/css/styles.scss')
@@ -241,13 +231,11 @@ function stylesDev() {
 ```
 
 Also the watch task has to be changed in order to watch for .scss filetypes:
-
 ```javascript
 watch('./src/assets/css/**/*.scss', stylesDev);
 ```
 
 Change the gulp tasks styleProd to:
-
 ```javascript
 function stylesProd() {
 	return src('./src/assets/css/styles.scss')
@@ -259,7 +247,6 @@ function stylesProd() {
 # 4. Images and Fonts
 ## Images
 It is recommended to store image assets in the directory:
-
 ```
 src/assets/img/
 ```
@@ -274,7 +261,6 @@ src/assets/fonts/
 ```
 
 Then you can include them in your **CSS**:
-
 ```css
 @font-face {
 	font-family: 'Helvetica Neue Thin';
@@ -288,27 +274,23 @@ Then you can include them in your **CSS**:
 ```
 
 # 5. JavaScript ES6
-
 GoPablo supports ES6 JavaScript with [Babel](https://babeljs.io/). Babel has support for the latest version of JavaScript through syntax transformers. These plugins allow you to use new syntax, right now without waiting for browser support.
 
 ## Write ES6 JavaScript
 Your JavaScript code should be located in:
-
 ```
 src/assets/js/
 ```
 
 GoPablo will watch for changes under the js directory and bundle the code in a single file, which will be included in the footer of the page as:
-
 ```
 footer-bundle.js
 ```
+
 Check the gulp configuration to learn more about how JavaScript is generated.
 
 # 6. External Libraries
-
 Including external JavaScript libraries is as simple as installing the npm script and including it in the **gulpfile.js**
-
 ```javascript
 /* -------------------------------------------------------------------------------------------------
 Header & Footer JavaScript Boundles
@@ -330,15 +312,12 @@ You can include the scripts in the head of the page before the DOM is loaded by 
 A build restart is required for changes to take effect.
 
 # 7. Code Style Rules
-
 GoPablo comes with its own set of code style rules:
-
 ```
 .stylelintrc
 ```
 
 ## Lint CSS
-
 Before pushing changes make sure you have clean and consistent CSS. Run [stylelint](https://stylelint.io/) with the command:
 ```
 npm run lint
@@ -372,20 +351,23 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.0.5**
+- 🚀 RELEASE: Check version with command: `gopablo -v`.
+
 **v0.0.4**
-- Correct typo.
-- Improve documentation.
+- 🐛 FIX: Correct typo.
+- 📖 DOC: Improve documentation.
 
 **v0.0.3**
-- Fix missing modules.
-- Improve documentation.
+- 🐛 FIX: Missing modules.
+- 📖 DOC: Improve documentation.
 
 **v0.0.2**
-- Run GoPablo globally from NPM.
-- Add `manifest.json`.
+- 📦 NEW: Run GoPablo globally from NPM.
+- 📦 NEW: Add `manifest.json`.
 
 **v0.0.1**
-- Meet GoPablo.
+- 📦 NEW: Meet GoPablo.
 
 # License
 MIT

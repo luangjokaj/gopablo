@@ -15,6 +15,14 @@ const currentNodeVersion = process.versions.node;
 const semver = currentNodeVersion.split('.');
 const major = semver[0];
 
+const program = require('commander');
+const version = require('../package.json').version;
+
+program
+	.version(version)
+	.option('-v, --version', 'version')
+	.parse(process.argv);
+
 // If below Node 8.
 if (8 > major) {
 	// eslint-disable-next-line  no-console
