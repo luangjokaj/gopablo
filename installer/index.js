@@ -37,7 +37,6 @@ program
 	if (response.value) {
 		// If below Node 8.
 		if (8 > major) {
-			// eslint-disable-next-line  no-console
 			console.error(
 				chalk.red(
 					'You are running Node ' +
