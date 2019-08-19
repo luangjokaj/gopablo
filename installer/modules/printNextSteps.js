@@ -41,7 +41,7 @@ module.exports = () => {
 		'\n',
 		`	${chalk.gray('SEO optimized React applications with SSR.')}`,
 		'\n',
-		`	${chalk.green('Pwered by Riangle →')} https://bit.ly/2P5i26I`,
+		`	${chalk.green('Powered by Riangle →')} https://bit.ly/2P5i26I`,
 		'\n',
 		'\n',
 		`	${chalk.red('Thank you for using 🐺 GoPablo →')} https://www.gopablo.co`,

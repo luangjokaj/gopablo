@@ -372,6 +372,10 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.0.4**
+- Correct typo.
+- Improve documentation.
+
 **v0.0.3**
 - Fix missing modules.
 - Improve documentation.
