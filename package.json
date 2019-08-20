@@ -1,6 +1,6 @@
 {
 	"name": "gopablo",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Static site generator.",
 	"keywords": [
 		"babel",
@@ -41,13 +41,13 @@
 		"babel-preset-env": "^1.7.0",
 		"browser-sync": "^2.26.7",
 		"chalk": "^2.4.2",
-		"cherry-grid": "0.0.8",
+		"cherry-grid": "0.1.1",
 		"commander": "^3.0.0",
 		"connect-modrewrite": "^0.10.2",
 		"cssnano": "^4.1.10",
 		"del": "^5.0.0",
 		"download": "^7.1.0",
-		"eslint": "^6.2.0",
+		"eslint": "^6.2.1",
 		"express": "^4.17.1",
 		"gulp": "^4.0.2",
 		"gulp-babel": "^8.0.0",

@@ -352,6 +352,9 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.0.7**
+- 🚀 RELEASE: Update dependencies.
+
 **v0.0.6**
 - 📦 NEW: Confirm installation directory.
 
