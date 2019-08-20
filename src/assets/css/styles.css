@@ -5,7 +5,7 @@ Entry Points
 **********************************************************************
 *********************************************************************/
 
-@import '../../../node_modules/cherry-design/lib/build/css/styles.css';
+@import '../../../node_modules/cherry-grid/dist/css/styles.css';
 @import './globals.css';
 
 @import './gopablo.css',
