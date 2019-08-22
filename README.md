@@ -352,6 +352,9 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.0.8**
+- 👌 IMPROVE: Meta.
+
 **v0.0.7**
 - 🚀 RELEASE: Update dependencies.
 
