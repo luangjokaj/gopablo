@@ -36,10 +36,10 @@
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
 	"dependencies": {
-		"chalk": "^2.4.1",
+		"chalk": "^2.4.2",
 		"download": "^7.1.0",
-		"execa": "^1.0.0",
-		"ora": "^3.0.0",
+		"execa": "^2.0.4",
+		"ora": "^3.4.0",
 		"prompts": "^2.2.1"
 	}
 }
