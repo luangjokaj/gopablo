@@ -356,6 +356,7 @@ We are live 🌍
 # Changelog
 **v0.0.9**
 - 🚀 RELEASE: Improved installation speed for global dependencies.
+- BRAKING CHANGE: It is required to update GoPablo: `sudo npm install gopablo -g`.
 
 **v0.0.8**
 - 👌 IMPROVE: Meta.
