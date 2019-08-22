@@ -132,13 +132,6 @@ npm install
 npm run dev
 ```
 
-**START WORKFLOW**
-
-- We are ready to start our development server with the command:
-```
-npm run dev
-```
-
 ## Templating and HTML Partials
 To avoid repetitive HTML code, GoPablo uses [gulp-file-include](https://github.com/haoxins/gulp-file-include). It has a simple templating synthax and allows to re-use chunks of code written in separate files. These partials are located in the directory:
 ```
@@ -354,6 +347,10 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.1.0**
+- 🚀 RELEASE: Update dependencies.
+- 📖 DOC: Improve documentation.
+
 **v0.0.9**
 - 🚀 RELEASE: Improved installation speed for global dependencies.
 - BREAKING CHANGE: It is required to update GoPablo: `sudo npm install gopablo -g`.
