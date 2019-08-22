@@ -26,8 +26,7 @@ module.exports = () => {
 		'https://raw.githubusercontent.com/luangjokaj/gopablo/master/LICENSE',
 		'https://raw.githubusercontent.com/luangjokaj/gopablo/master/README.md',
 		'https://raw.githubusercontent.com/luangjokaj/gopablo/master/gulpfile.js',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/master/package-lock.json',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/master/package.json',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/master/installer/package.json',
 		'https://raw.githubusercontent.com/luangjokaj/gopablo/master/server.js',
 
 		'https://raw.githubusercontent.com/luangjokaj/gopablo/master/src/index.html',

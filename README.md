@@ -117,6 +117,8 @@ git clone https://github.com/luangjokaj/gopablo
 ```
 - This will clone the repository on your local machine. Navigate to the newly created folder and install the dependencies:
 
+- Replace the file: `./package.json` with `./installer/package.json` and continue with the dependencie installation.
+
 **INSTALL DEPENDENCIES**
 
 ```
@@ -352,6 +354,9 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.0.9**
+- 🚀 RELEASE: Improved installation speed for global dependencies.
+
 **v0.0.8**
 - 👌 IMPROVE: Meta.
 
