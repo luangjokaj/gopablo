@@ -347,6 +347,10 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.1.1**
+- 👌 IMPROVE: Install only required dependencies.
+- 🚀 RELEASE: Update dependencies.
+
 **v0.1.0**
 - 🚀 RELEASE: Update dependencies.
 - 📖 DOC: Improve documentation.
