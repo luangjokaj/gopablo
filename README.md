@@ -115,9 +115,9 @@ To install GoPablo you need to clone the repository from GitHub:
 ```
 git clone https://github.com/luangjokaj/gopablo
 ```
-- This will clone the repository on your local machine. Navigate to the newly created folder and install the dependencies:
+- This will clone the repository on your local machine. Navigate to the newly created folder.
 
-- Replace the file: `./package.json` with `./installer/package.json` and continue with the dependencie installation.
+- Replace the file: `./package.json` with `./installer/package.json` and continue with the dependency installation.
 
 **INSTALL DEPENDENCIES**
 
