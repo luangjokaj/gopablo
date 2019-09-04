@@ -347,6 +347,9 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.1.2**
+- 🚀 RELEASE: Install files from versioned release instead of `master` branch.
+
 **v0.1.1**
 - 👌 IMPROVE: Install only required dependencies.
 - 🚀 RELEASE: Update dependencies.
