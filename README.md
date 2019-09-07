@@ -219,7 +219,7 @@ Change the gulp tasks stylesDev to:
 function stylesDev() {
 	return src('./src/assets/css/styles.scss')
 		.pipe(sourcemaps.init())
-		.pipe(sass().on("error", sass.logError))
+		.pipe(sass({includePaths: 'node_modules'}).on("error", sass.logError))
 		.pipe(sourcemaps.write('.'))
 		.pipe(dest('./build/assets/css'))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
@@ -235,7 +235,7 @@ Change the gulp tasks styleProd to:
 ```javascript
 function stylesProd() {
 	return src('./src/assets/css/styles.scss')
-		.pipe(sass().on("error", sass.logError))
+		.pipe(sass({includePaths: 'node_modules'}).on("error", sass.logError))
 		.pipe(dest('./dist/assets/css'))
 }
 ```
