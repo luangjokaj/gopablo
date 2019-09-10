@@ -348,6 +348,10 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+**v0.1.3**
+- 🐛 FIX: Do not rename html files `dontUpdateReference` while caching busting.
+- 📖 DOC: Improve documentation.
+
 **v0.1.2**
 - 🚀 RELEASE: Install files from versioned release instead of `master` branch.
 

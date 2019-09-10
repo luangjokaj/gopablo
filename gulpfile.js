@@ -244,7 +244,12 @@ function copyEtcProd() {
 
 function bustCaches() {
 	return src(['./dist/**'])
-		.pipe(RevAll.revision({ dontRenameFile: [/^\/favicon.ico$/g, '.html'] }))
+		.pipe(
+			RevAll.revision({
+				dontRenameFile: [/^\/favicon.ico$/g, '.html'],
+				dontUpdateReference: [/^\/favicon.ico$/g, '.html'],
+			}),
+		)
 		.pipe(dest('./dist'))
 		.on('end', () => {
 			gutil.beep();
