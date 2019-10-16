@@ -20,37 +20,37 @@ module.exports = () => {
 
 	// Files.
 	const filesToDownload = [
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/.babelrc',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/.gitignore',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/.stylelintrc',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/LICENSE',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/README.md',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/gulpfile.js',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/installer/package.json',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/server.js',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/.babelrc',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/.gitignore',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/.stylelintrc',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/LICENSE',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/README.md',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/gulpfile.js',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/installer/package.json',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/server.js',
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/index.html',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/index.html',
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/etc/manifest.json',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/etc/manifest.json',
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/includes/content.html',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/includes/footer.html',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/includes/header.html',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/includes/helmet.html',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/includes/content.html',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/includes/footer.html',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/includes/header.html',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/includes/helmet.html',
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/assets/css/globals.css',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/assets/css/gopablo.css',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/assets/css/mixins.css',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/assets/css/styles.css',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/assets/css/variables.css',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/assets/css/globals.css',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/assets/css/gopablo.css',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/assets/css/mixins.css',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/assets/css/styles.css',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/assets/css/variables.css',
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/assets/img/favicon.ico',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/assets/img/icon-192.png',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/assets/img/icon-512.png',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/assets/img/logo.svg',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/assets/img/favicon.ico',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/assets/img/icon-192.png',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/assets/img/icon-512.png',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/assets/img/logo.svg',
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/assets/js/main.js',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-1/src/assets/js/onclick.js',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/assets/js/main.js',
+		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-2/src/assets/js/onclick.js',
 	];
 
 	// Organise file structure
