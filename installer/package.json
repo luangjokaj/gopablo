@@ -36,7 +36,7 @@
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@babel/preset-env": "^7.8.2",
+		"@babel/preset-env": "^7.8.3",
 		"aos": "^2.3.4",
 		"babel-preset-env": "^1.7.0",
 		"browser-sync": "^2.26.7",
