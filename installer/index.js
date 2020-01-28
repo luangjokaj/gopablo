@@ -36,18 +36,18 @@ program
 
 	if (response.value) {
 		// If below Node 8.
-		// if (8 > major) {
-		// 	console.error(
-		// 		chalk.red(
-		// 			'You are running Node ' +
-		// 				currentNodeVersion +
-		// 				'.\n' +
-		// 				'Install GoPablo requires Node 8 or higher. \n' +
-		// 				'Kindly, update your version of Node.',
-		// 		),
-		// 	);
-		// 	process.exit(1);
-		// }
+		if (8 > major) {
+			console.error(
+				chalk.red(
+					'You are running Node ' +
+						currentNodeVersion +
+						'.\n' +
+						'Install GoPablo requires Node 8 or higher. \n' +
+						'Kindly, update your version of Node.',
+				),
+			);
+			process.exit(1);
+		}
 
 		// Makes the script crash on unhandled rejections instead of silently
 		// ignoring them. In the future, promise rejections that are not handled will
