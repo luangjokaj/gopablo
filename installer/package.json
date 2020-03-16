@@ -39,7 +39,6 @@
 		"@babel/core": "^7.8.7",
 		"@babel/preset-env": "^7.8.7",
 		"aos": "^2.3.4",
-		"babel-preset-env": "^1.7.0",
 		"browser-sync": "^2.26.7",
 		"cherry-grid": "0.1.20",
 		"connect-modrewrite": "^0.10.2",
