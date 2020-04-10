@@ -37,7 +37,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"@babel/core": "^7.9.0",
-		"@babel/preset-env": "^7.9.0",
+		"@babel/preset-env": "^7.9.5",
 		"aos": "^2.3.4",
 		"browser-sync": "^2.26.7",
 		"cherry-grid": "0.1.22",
@@ -54,17 +54,17 @@
 		"gulp-imagemin": "^7.1.0",
 		"gulp-plumber": "^1.2.1",
 		"gulp-postcss": "^8.0.0",
-		"gulp-purgecss": "^2.1.0",
+		"gulp-purgecss": "^2.1.2",
 		"gulp-rev-all": "^2.0.3",
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-uglify": "^3.0.2",
 		"gulp-util": "^3.0.8",
-		"jquery": "^3.4.1",
+		"jquery": "^3.5.0",
 		"postcss-flexbugs-fixes": "^4.2.0",
 		"postcss-import": "^12.0.1",
 		"postcss-mixins": "^6.2.3",
 		"postcss-preset-env": "^6.7.0",
-		"stylelint": "^13.2.1",
+		"stylelint": "^13.3.1",
 		"webfontloader": "^1.6.28"
 	}
 }
