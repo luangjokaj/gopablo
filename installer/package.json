@@ -40,7 +40,7 @@
 		"@babel/preset-env": "^7.9.6",
 		"aos": "^2.3.4",
 		"browser-sync": "^2.26.7",
-		"cherry-grid": "0.1.24",
+		"cherry-grid": "0.1.25",
 		"connect-modrewrite": "^0.10.2",
 		"cssnano": "^4.1.10",
 		"del": "^5.1.0",
