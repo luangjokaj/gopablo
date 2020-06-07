@@ -52,7 +52,9 @@ Ready to deploy 🚀
 ---
 
 ## Introduction
-[GoPablo](https://www.gopablo.co/) is a static site generator with a modern development workflow, integrated web server, auto-reload, CSS preprocessors, and ES6 ready.
+| Information | Discord | Donate |
+|:------------|:---------|:-------|
+| [GoPablo](https://www.gopablo.co) is a static site generator with a modern development workflow, integrated web server, auto-reload, CSS preprocessors, and ES6 ready.| [![Discord server](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.icons8.com%2Fcolor%2F2x%2Fdiscord-logo.png&f=1&nofb=1)](https://discord.gg/qE7e93) | [![BuyMeACoffee](https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-1.svg)](https://www.buymeacoffee.com/luangjokaj) |
 
 ## Features
 |👇|Includes|
