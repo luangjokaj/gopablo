@@ -54,7 +54,7 @@
 		"gulp-imagemin": "^7.1.0",
 		"gulp-plumber": "^1.2.1",
 		"gulp-postcss": "^8.0.0",
-		"gulp-purgecss": "^2.2.0",
+		"gulp-purgecss": "^2.3.0",
 		"gulp-rev-all": "^2.0.3",
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-uglify": "^3.0.2",
