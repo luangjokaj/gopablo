@@ -36,15 +36,15 @@
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@babel/core": "^7.10.2",
-		"@babel/preset-env": "^7.10.2",
+		"@babel/core": "^7.10.3",
+		"@babel/preset-env": "^7.10.3",
 		"aos": "^2.3.4",
 		"browser-sync": "^2.26.7",
 		"cherry-grid": "0.1.28",
 		"connect-modrewrite": "^0.10.2",
 		"cssnano": "^4.1.10",
 		"del": "^5.1.0",
-		"eslint": "^7.2.0",
+		"eslint": "^7.3.0",
 		"express": "^4.17.1",
 		"gulp": "^4.0.2",
 		"gulp-babel": "^8.0.0",
@@ -65,7 +65,7 @@
 		"postcss-import": "^12.0.1",
 		"postcss-mixins": "^6.2.3",
 		"postcss-preset-env": "^6.7.0",
-		"stylelint": "^13.6.0",
+		"stylelint": "^13.6.1",
 		"webfontloader": "^1.6.28"
 	}
 }
