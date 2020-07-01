@@ -36,8 +36,8 @@
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@babel/core": "^7.10.3",
-		"@babel/preset-env": "^7.10.3",
+		"@babel/core": "^7.10.4",
+		"@babel/preset-env": "^7.10.4",
 		"aos": "^2.3.4",
 		"browser-sync": "^2.26.7",
 		"cherry-grid": "0.1.28",
