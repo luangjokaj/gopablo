@@ -1,6 +1,6 @@
 {
 	"name": "gopablo",
-	"version": "0.1.3-16",
+	"version": "0.1.3-17",
 	"description": "Static site generator.",
 	"keywords": [
 		"babel",
@@ -38,10 +38,10 @@
 	"dependencies": {
 		"chalk": "^4.1.0",
 		"cherry-grid": "^0.1.30",
-		"commander": "^6.1.0",
+		"commander": "^6.2.0",
 		"download": "^8.0.0",
-		"execa": "^4.0.3",
+		"execa": "^4.1.0",
 		"ora": "^5.1.0",
-		"prompts": "^2.3.2"
+		"prompts": "^2.4.0"
 	}
 }
