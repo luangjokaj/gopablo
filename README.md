@@ -26,24 +26,18 @@
 - [9. Audit and Page Speed](#9-audit-and-page-speed)
 
 ## TL;DR
-### Install GoPablo
+### Initialize GoPablo
 ```
-sudo npm i gopablo -g
-```
-
-### Initialize project
-Run GoPablo to generate the file structure:
-```
-gopablo
+npx gopablo
 ```
 
-### Run the app in development mode
+### Run development mode
 Build and open your browser to http://localhost:3000.
 ```
 npm run dev
 ```
 
-### Build distribution files for the app in production
+### Build distribution files for production
 ```
 npm run prod
 ```
@@ -352,6 +346,10 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+
+**v0.1.4-2**
+- 📖 DOC: Improve documentation.
+- 🚀 RELEASE: Update version.
 
 **v0.1.4**
 - 📦 NEW: Add support for Tailwind CSS.
