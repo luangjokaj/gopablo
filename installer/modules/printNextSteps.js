@@ -44,7 +44,7 @@ module.exports = () => {
 		`	${chalk.green('Powered by Riangle →')} https://bit.ly/2P5i26I`,
 		'\n',
 		'\n',
-		`	${chalk.red('Thank you for using 🐺 GoPablo →')} https://www.gopablo.co`,
+		`	${chalk.red('Thank you for using 🐺 GoPablo → ')} https://www.gopablo.co`,
 	);
 
 	// Get started.
