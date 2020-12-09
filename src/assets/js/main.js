@@ -1,11 +1,6 @@
 const header = $('#header');
 
 $(window).on('load', () => {
-	WebFont.load({
-		google: {
-			families: ["Roboto:100,300,400,700"]
-		}
-	});
 	setTimeout(function () {
 		$(window).scroll(function () {
 			let scrolled = $(window).scrollTop();

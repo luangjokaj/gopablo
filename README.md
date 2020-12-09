@@ -1,12 +1,12 @@
 # [![GoPablo](https://raw.githubusercontent.com/luangjokaj/gopablo/master/src/assets/img/logo.svg?sanitize=true)](https://www.gopablo.co/)
 
-![Version](https://img.shields.io/github/package-json/v/luangjokaj/gopablo) [![Dependencies](https://david-dm.org/luangjokaj/gopablo/status.svg)](https://david-dm.org/luangjokaj/gopablo)
+[![Version](https://img.shields.io/github/package-json/v/luangjokaj/gopablo)](https://www.gopablo.co/) [![Dependencies](https://img.shields.io/david/luangjokaj/gopablo)](https://www.gopablo.co/)
 
 [GoPablo](https://www.gopablo.co/) a static site generator.
 
 - [Introduction](#introduction)
 	- [Features](#features)
-- [1. Installing Node](#1-installing-node)
+- [1. Installing Node.js](#1-installing-nodejs)
 - [2. Set Up Project](#2-set-up-project)
 	- [Install GoPablo from NPM](#install-gopablo-from-npm)
 	- [Install GoPablo from Repository](#install-gopablo-from-repository)
@@ -54,7 +54,7 @@ Ready to deploy 🚀
 ## Introduction
 | Information | Discord | Donate |
 |:------------|:---------|:-------|
-| [GoPablo](https://www.gopablo.co) is a static site generator with a modern development workflow, integrated web server, auto-reload, CSS preprocessors, and ES6 ready.| [![Discord server](https://svgshare.com/i/Lqc.svg)](https://discord.gg/qE7e93) | [![BuyMeACoffee](https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-1.svg)](https://www.buymeacoffee.com/luangjokaj) |
+| [GoPablo](https://www.gopablo.co) is a static site generator with a modern development workflow, integrated web server, auto-reload, CSS preprocessors, and ES6 ready.| [![Discord server](https://svgshare.com/i/Lqc.svg)](https://discord.gg/uQFdMddMZw) | [![BuyMeACoffee](https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-1.svg)](https://www.buymeacoffee.com/luangjokaj) |
 
 ## Features
 |👇|Includes|
@@ -67,11 +67,12 @@ Ready to deploy 🚀
 |🌈| Image Compression|
 |🕸| Templating & Partial HTML Injection|
 |🎨| PostCSS & Next Generation CSS|
+|💨| Tailwind CSS|
 |✂️| Cache-Busting|
 |🛎| Distribution Files|
 
-# 1. Installing Node
-GoPablo requires Node v7.5+. This is the only global dependency. You can download Node **[here](https://nodejs.org/)**.
+# 1. Installing Node.js
+GoPablo requires **Node.js v12+**. This is the only global dependency. You can download Node.js **[here](https://nodejs.org/)**.
 
 Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js’ package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 
@@ -95,30 +96,26 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
     └── gulpfile.js              # Gulp configuration
     └── LICENSE                  # License agreements
     └── package-lock.json        # Packages lock file
-    └── package.json             # Node packages
+    └── package.json             # Node.js packages
     └── README.md                # You are reading this
     └── server.js                # Express server
 ```
 
 ## Install GoPablo from NPM
-To install GoPablo from NPM, run the command:
+To install GoPablo create a directory for the new website and from there run the command to generate the file structure:
 ```
-sudo npm i gopablo -g
-```
+npx gopablo
 
-**START GOPABLO**
-
-- Create a directory for the new website and from there run GoPablo to generate the file structure:
 ```
-gopablo
-```
+That's it 🍾 easy as that. Now start the development workflow: [Start Workflow](#start-workflow)
 
 ## Install GoPablo from Repository
 To install GoPablo you need to clone the repository from GitHub:
 ```
 git clone https://github.com/luangjokaj/gopablo
 ```
-- This will clone the repository on your local machine. Navigate to the newly created folder.
+
+- This will clone the repository on your local machine. Navigate to the newly created directory.
 
 - Replace the file: `./package.json` with `./installer/package.json` and continue with the dependency installation.
 
@@ -128,12 +125,20 @@ git clone https://github.com/luangjokaj/gopablo
 npm install
 ```
 
-**START WORKFLOW**
+## Start Workflow
 
-- We are ready to start our development server with the command:
+- To start the development server run the command:
 ```
 npm run dev
 ```
+- You are ready to go! Happy coding! 🤓
+
+## Generate production files
+To generate your distribution files run the command:
+```
+npm run prod
+```
+The files will be generated in the `dist/` directory.
 
 ## Templating and HTML Partials
 To avoid repetitive HTML code, GoPablo uses [gulp-file-include](https://github.com/haoxins/gulp-file-include). It has a simple templating synthax and allows to re-use chunks of code written in separate files. These partials are located in the directory:
@@ -144,13 +149,6 @@ For more information check out their documentation and examples: https://github.
 
 ## New pages
 To create new pages, simply create new .html files in the `src/` directory.
-
-## Generate production files
-To generate your distribution files run the command:
-```
-npm run prod
-```
-The files will be generated in the `dist/` directory.
 
 # 3. CSS, PostCSS and Sass
 ## PostCSS
@@ -206,6 +204,10 @@ The starting point for CSS is the file:
 src/assets/css/styles.css
 ```
 
+**TAILWIND CSS**
+
+[Tailwind CSS](https://tailwindcss.com/) is a utility-first CSS framework packed with classes like `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup. Tailwind comes pre-installed with GoPablo.
+
 ## Sass
 GoPablo is super flexible. You can install Sass and use it as the main CSS preprocessor:
 ```
@@ -222,7 +224,7 @@ Change the gulp tasks stylesDev to:
 function stylesDev() {
 	return src('./src/assets/css/styles.scss')
 		.pipe(sourcemaps.init())
-		.pipe(sass({includePaths: 'node_modules'}).on("error", sass.logError))
+		.pipe(sass({includePaths: 'node_modules'}).on('error', sass.logError))
 		.pipe(sourcemaps.write('.'))
 		.pipe(dest('./build/assets/css'))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
@@ -238,7 +240,7 @@ Change the gulp tasks styleProd to:
 ```javascript
 function stylesProd() {
 	return src('./src/assets/css/styles.scss')
-		.pipe(sass({includePaths: 'node_modules'}).on("error", sass.logError))
+		.pipe(sass({includePaths: 'node_modules'}).on('error', sass.logError))
 		.pipe(dest('./dist/assets/css'))
 }
 ```
@@ -350,6 +352,12 @@ We are live 🌍
 |:-:|:---|
 
 # Changelog
+
+**v0.1.4**
+- 📦 NEW: Add support for Tailwind CSS.
+- 📖 DOC: Improve documentation.
+- 👌 IMPROVE: Code style and cleanup.
+
 **v0.1.3**
 - 🐛 FIX: Do not rename html files `dontUpdateReference` while caching busting.
 - 📖 DOC: Improve documentation.

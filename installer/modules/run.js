@@ -13,52 +13,55 @@ const download = require('download');
 const handleError = require('./handleError.js');
 const clearConsole = require('./clearConsole.js');
 const printNextSteps = require('./printNextSteps.js');
+const version = require('../package.json').version;
 
 module.exports = () => {
 	// Init.
 	clearConsole();
 
+	let upstreamUrl = `https://raw.githubusercontent.com/luangjokaj/gopablo/v${version}`;
+
 	// Files.
 	const filesToDownload = [
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/.babelrc',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/.gitignore',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/.stylelintrc',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/LICENSE',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/README.md',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/gulpfile.js',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/installer/package.json',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/server.js',
+		`${upstreamUrl}/.babelrc`,
+		`${upstreamUrl}/.gitignore`,
+		`${upstreamUrl}/.stylelintrc`,
+		`${upstreamUrl}/.editorconfig`,
+		`${upstreamUrl}/LICENSE`,
+		`${upstreamUrl}/README.md`,
+		`${upstreamUrl}/gulpfile.js`,
+		`${upstreamUrl}/tailwind.config.js`,
+		`${upstreamUrl}/installer/package.json`,
+		`${upstreamUrl}/server.js`,
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/index.html',
+		`${upstreamUrl}/src/index.html`,
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/etc/manifest.json',
+		`${upstreamUrl}/src/etc/manifest.json`,
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/includes/content.html',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/includes/footer.html',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/includes/header.html',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/includes/helmet.html',
+		`${upstreamUrl}/src/includes/content.html`,
+		`${upstreamUrl}/src/includes/footer.html`,
+		`${upstreamUrl}/src/includes/header.html`,
+		`${upstreamUrl}/src/includes/helmet.html`,
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/assets/css/globals.css',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/assets/css/gopablo.css',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/assets/css/mixins.css',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/assets/css/styles.css',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/assets/css/variables.css',
+		`${upstreamUrl}/src/assets/css/gopablo.css`,
+		`${upstreamUrl}/src/assets/css/styles.css`,
+		`${upstreamUrl}/src/assets/css/variables.css`,
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/assets/img/favicon.ico',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/assets/img/icon-192.png',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/assets/img/icon-512.png',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/assets/img/logo.svg',
+		`${upstreamUrl}/src/assets/img/favicon.ico`,
+		`${upstreamUrl}/src/assets/img/icon-192.png`,
+		`${upstreamUrl}/src/assets/img/icon-512.png`,
+		`${upstreamUrl}/src/assets/img/logo.svg`,
 
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/assets/js/main.js',
-		'https://raw.githubusercontent.com/luangjokaj/gopablo/v0.1.3-17/src/assets/js/onclick.js',
+		`${upstreamUrl}/src/assets/js/main.js`,
+		`${upstreamUrl}/src/assets/js/onclick.js`,
 	];
 
 	// Organise file structure
-	const dotFiles = ['.babelrc', '.gitignore', '.stylelintrc'];
+	const dotFiles = ['.babelrc', '.gitignore', '.stylelintrc', '.editorconfig',];
 	const srcFiles = ['index.html'];
 	const etcFiles = ['manifest.json'];
 	const includesFiles = ['content.html', 'footer.html', 'header.html', 'helmet.html'];
-	const cssFiles = ['globals.css', 'gopablo.css', 'mixins.css', 'styles.css', 'variables.css'];
+	const cssFiles = ['gopablo.css', 'styles.css', 'variables.css'];
 	const imgFiles = ['favicon.ico', 'icon-192.png', 'icon-512.png', 'logo.svg'];
 	const jsFiles = ['main.js', 'onclick.js'];
 

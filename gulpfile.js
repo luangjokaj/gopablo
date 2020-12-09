@@ -20,6 +20,7 @@ const postcss = require('gulp-postcss');
 const postcssImport = require('postcss-import');
 const postCSSMixins = require('postcss-mixins');
 const postcssPresetEnv = require('postcss-preset-env');
+const tailwindcss = require('tailwindcss');
 const RevAll = require('gulp-rev-all');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
@@ -40,6 +41,7 @@ const pluginsDev = [
 			'custom-media': true,
 		},
 	}),
+	tailwindcss,
 ];
 const pluginsProd = [
 	postcssImport,
@@ -52,6 +54,7 @@ const pluginsProd = [
 			'custom-media': true,
 		},
 	}),
+	tailwindcss,
 	require('cssnano')({
 		preset: [
 			'default',
@@ -67,11 +70,7 @@ const pluginsProd = [
 Header & Footer JavaScript Boundles
 -------------------------------------------------------------------------------------------------- */
 const headerJS = ['./node_modules/aos/dist/aos.js'];
-const footerJS = [
-	'./node_modules/webfontloader/webfontloader.js',
-	'./node_modules/jquery/dist/jquery.js',
-	'./src/assets/js/**',
-];
+const footerJS = ['./node_modules/jquery/dist/jquery.js', './src/assets/js/**'];
 
 //--------------------------------------------------------------------------------------------------
 /* -------------------------------------------------------------------------------------------------
@@ -132,7 +131,7 @@ function footerScriptsDev() {
 		.pipe(
 			babel({
 				presets: ['@babel/preset-env'],
-			}),
+			})
 		)
 		.pipe(concat('footer-bundle.js'))
 		.pipe(sourcemaps.write('.'))
@@ -148,7 +147,7 @@ function staticFilesDev() {
 					prefix: '@@',
 					basepath: '@file',
 				},
-			}),
+			})
 		)
 		.pipe(dest('./build'));
 }
@@ -160,7 +159,7 @@ exports.dev = series(
 	headerScriptsDev,
 	footerScriptsDev,
 	staticFilesDev,
-	devServer,
+	devServer
 );
 
 /* -------------------------------------------------------------------------------------------------
@@ -188,7 +187,7 @@ function footerScriptsProd() {
 		.pipe(
 			babel({
 				presets: ['@babel/preset-env'],
-			}),
+			})
 		)
 		.pipe(concat('footer-bundle.js'))
 		.pipe(uglify())
@@ -204,13 +203,13 @@ function staticFilesProd() {
 					prefix: '@@',
 					basepath: '@file',
 				},
-			}),
+			})
 		)
 		.pipe(
 			htmlmin({
 				collapseWhitespace: true,
 				ignoreCustomFragments: [/<%[\s\S]*?%>/, /<\?[=|php]?[\s\S]*?\?>/],
-			}),
+			})
 		)
 		.pipe(dest('./dist'));
 }
@@ -225,7 +224,7 @@ function processImages() {
 		.pipe(
 			imagemin([imagemin.svgo({ plugins: [{ removeViewBox: true }] })], {
 				verbose: true,
-			}),
+			})
 		)
 		.pipe(dest('./dist/assets/img'));
 }
@@ -234,7 +233,20 @@ function stylesProd() {
 	return src('./src/assets/css/styles.css')
 		.pipe(plumber({ errorHandler: onError }))
 		.pipe(postcss(pluginsProd))
-		.pipe(purgecss({ content: ['./src/**/*.html'], whitelist: ['aos-animate'] }))
+		.pipe(
+			purgecss({
+				content: ['./src/**/*.html'],
+				whitelist: ['aos-animate'],
+				extractors: [
+					{
+						extractor: (content) => {
+							return content.match(/[A-z0-9-:\/]+/g) || [];
+						},
+						extensions: ['css', 'html'],
+					},
+				],
+			})
+		)
 		.pipe(dest('./dist/assets/css'));
 }
 
@@ -248,7 +260,7 @@ function bustCaches() {
 			RevAll.revision({
 				dontRenameFile: [/^\/favicon.ico$/g, '.html'],
 				dontUpdateReference: [/^\/favicon.ico$/g, '.html'],
-			}),
+			})
 		)
 		.pipe(dest('./dist'))
 		.on('end', () => {
@@ -268,13 +280,13 @@ exports.prod = series(
 	processImages,
 	stylesProd,
 	copyEtcProd,
-	bustCaches,
+	bustCaches
 );
 
 /* -------------------------------------------------------------------------------------------------
 Utility Tasks
 -------------------------------------------------------------------------------------------------- */
-const onError = err => {
+const onError = (err) => {
 	gutil.beep();
 	gutil.log(staticBuild + ' - ' + errorMsg + ' ' + err.toString());
 	this.emit('end');
@@ -284,7 +296,8 @@ const onError = err => {
 Messages
 -------------------------------------------------------------------------------------------------- */
 const errorMsg = '\x1b[41mError\x1b[0m';
-const filesGenerated = 'Your production file are generated in: \x1b[1m' + __dirname + '/dist/ ✅';
+const filesGenerated =
+	'Your production file are generated in: \x1b[1m' + __dirname + '/dist/ ✅';
 
 const staticBuild = '\x1b[42m\x1b[1m🐺 GoPablo\x1b[0m';
 const staticBuildUrl = '\x1b[2m - https://www.gopablo.co/\x1b[0m';
