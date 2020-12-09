@@ -86,7 +86,8 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
     │   ├── index.html           # Index page
     └── .babelrc                 # Babel configuration
     └── .gitignore               # Git ignored files
-    └── .stylelintrc             # Stylelint configuration file
+	└── .editorconfig            # Editor code styles
+    └── .stylelintrc             # Stylelint configuration
     └── gulpfile.js              # Gulp configuration
     └── LICENSE                  # License agreements
     └── package-lock.json        # Packages lock file

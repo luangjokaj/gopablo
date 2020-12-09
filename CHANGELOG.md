@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.1.4-4**
+- 📖 DOC: Improve documentation.
+
 **v0.1.4-3**
 - 🐛 FIX: Run `stylesDev` when template files are changed. Solves Tailwind CSS purge.
 
