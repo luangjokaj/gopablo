@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.1.4-5**
+- 👌 IMPROVE: Output log.
+
 **v0.1.4-4**
 - 📖 DOC: Improve documentation.
 

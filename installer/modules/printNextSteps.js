@@ -29,19 +29,19 @@ module.exports = () => {
 	console.log('\n✊ ', chalk.black.bgYellow(' Support GoPablo \n'));
 	console.log('Like GoPablo? Check out our other free and open source repositories: \n');
 	console.log(
-		`	${chalk.yellow('WordPressify →')} https://bit.ly/2KTqyQX`,
+		`	${chalk.yellow('WordPressify → ')} https://bit.ly/2KTqyQX`,
 		'\n',
 		`	${chalk.gray('Development workflow for WordPress themes.')}`,
 		'\n',
-		`	${chalk.yellow('FuzzyMail →')} https://bit.ly/2P3Irlr`,
+		`	${chalk.yellow('FuzzyMail → ')} https://bit.ly/2P3Irlr`,
 		'\n',
 		`	${chalk.gray('Email template generator. Making emails fun again.')}`,
 		'\n',
-		`	${chalk.yellow('ReactFondue →')} https://bit.ly/2OXgStR`,
+		`	${chalk.yellow('ReactFondue → ')} https://bit.ly/2OXgStR`,
 		'\n',
 		`	${chalk.gray('SEO optimized React applications with SSR.')}`,
 		'\n',
-		`	${chalk.green('Powered by Riangle →')} https://bit.ly/2P5i26I`,
+		`	${chalk.green('Powered by Riangle → ')} https://bit.ly/2P5i26I`,
 		'\n',
 		'\n',
 		`	${chalk.red('Thank you for using 🐺 GoPablo → ')} https://www.gopablo.co`,
