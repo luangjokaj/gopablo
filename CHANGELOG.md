@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.1.4-6**
+- 🚀 RELEASE: Update dependencies.
+
 **v0.1.4-5**
 - 👌 IMPROVE: Output log.
 

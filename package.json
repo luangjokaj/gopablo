@@ -1,6 +1,6 @@
 {
 	"name": "gopablo",
-	"version": "0.1.4-5",
+	"version": "0.1.4-6",
 	"description": "Static site generator.",
 	"keywords": [
 		"babel",
