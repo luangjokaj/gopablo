@@ -20,7 +20,6 @@ const postcss = require('gulp-postcss');
 const postcssImport = require('postcss-import');
 const postCSSMixins = require('postcss-mixins');
 const postcssPresetEnv = require('postcss-preset-env');
-const tailwindcss = require('tailwindcss');
 const RevAll = require('gulp-rev-all');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');

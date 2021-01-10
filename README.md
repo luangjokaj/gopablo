@@ -199,6 +199,10 @@ The starting point for CSS is the file:
 src/assets/css/styles.css
 ```
 
+**CHERRY DESIGN SYSTEM**
+
+[Cherry](https://cherry.design/) is a minimal CSS framework that helps you organize your work from design to implementation.
+
 ## Sass
 GoPablo is super flexible. You can install Sass and use it as the main CSS preprocessor:
 ```
