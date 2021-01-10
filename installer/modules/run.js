@@ -30,7 +30,6 @@ module.exports = () => {
 		`${upstreamUrl}/LICENSE`,
 		`${upstreamUrl}/README.md`,
 		`${upstreamUrl}/gulpfile.js`,
-		`${upstreamUrl}/tailwind.config.js`,
 		`${upstreamUrl}/installer/package.json`,
 		`${upstreamUrl}/server.js`,
 

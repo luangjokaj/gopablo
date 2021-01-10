@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.1.4-9**
+- 👌 IMPROVE: Remove tailwind.config.js.
+
 **v0.1.4-8**
 - 🚀 RELEASE: Update version.
 
