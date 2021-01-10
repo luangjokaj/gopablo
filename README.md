@@ -61,7 +61,7 @@ Ready to deploy 🚀
 |🌈| Image Compression|
 |🕸| Templating & Partial HTML Injection|
 |🎨| PostCSS & Next Generation CSS|
-|💨| Tailwind CSS|
+|🍒| [Cherry Design System](https://cherry.design)|
 |✂️| Cache-Busting|
 |🛎| Distribution Files|
 
@@ -198,10 +198,6 @@ The starting point for CSS is the file:
 ```
 src/assets/css/styles.css
 ```
-
-**TAILWIND CSS**
-
-[Tailwind CSS](https://tailwindcss.com/) is a utility-first CSS framework packed with classes like `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup. Tailwind comes pre-installed with GoPablo.
 
 ## Sass
 GoPablo is super flexible. You can install Sass and use it as the main CSS preprocessor:

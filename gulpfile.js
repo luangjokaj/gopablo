@@ -32,7 +32,6 @@ PostCSS Plugins
 -------------------------------------------------------------------------------------------------- */
 const pluginsDev = [
 	postcssImport,
-	postCSSMixins,
 	postcssPresetEnv({
 		stage: 0,
 		features: {
@@ -41,11 +40,10 @@ const pluginsDev = [
 			'custom-media': true,
 		},
 	}),
-	tailwindcss,
+	postCSSMixins,
 ];
 const pluginsProd = [
 	postcssImport,
-	postCSSMixins,
 	postcssPresetEnv({
 		stage: 0,
 		features: {
@@ -54,15 +52,8 @@ const pluginsProd = [
 			'custom-media': true,
 		},
 	}),
-	tailwindcss,
-	require('cssnano')({
-		preset: [
-			'default',
-			{
-				discardComments: true,
-			},
-		],
-	}),
+	postCSSMixins,
+	require('cssnano')(),
 ];
 
 //--------------------------------------------------------------------------------------------------

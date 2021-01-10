@@ -4,10 +4,6 @@ Entry Points
 **********************************************************************
 *********************************************************************/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import "cherry-postcss/src/cherry";
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-@import './gopablo.css',
+@import './gopablo',

@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.1.4-7**
+- 📦 NEW: Replace Tailwind with [Cherry Design System](https://cherry.design).
+
 **v0.1.4-6**
 - 🚀 RELEASE: Update dependencies.
 

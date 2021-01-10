@@ -1,18 +1,7 @@
-@import './variables';
-
 body {
 	text-align: center;
 }
 
 .header {
 	padding-top: 20px;
-}
-
-.header,
-.container {
-	@apply text-center m-auto;
-
-	& img {
-		@apply inline-flex mb-5;
-	}
 }
