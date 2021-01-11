@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.1.4-11**
+- 🚀 RELEASE: Update version.
+
 **v0.1.4-10**
 - 🚀 RELEASE: Update dependencies.
 
