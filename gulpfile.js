@@ -19,6 +19,7 @@ const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 const postcssImport = require('postcss-import');
 const postCSSMixins = require('postcss-mixins');
+const autoprefixer = require('autoprefixer');
 const postcssPresetEnv = require('postcss-preset-env');
 const RevAll = require('gulp-rev-all');
 const sourcemaps = require('gulp-sourcemaps');
@@ -40,6 +41,7 @@ const pluginsDev = [
 		},
 	}),
 	postCSSMixins,
+	autoprefixer,
 ];
 const pluginsProd = [
 	postcssImport,
@@ -52,6 +54,7 @@ const pluginsProd = [
 		},
 	}),
 	postCSSMixins,
+	autoprefixer,
 	require('cssnano')(),
 ];
 
