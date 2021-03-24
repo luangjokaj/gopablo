@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.1.4-13**
+- 🚀 RELEASE: Update dependencies.
+
 **v0.1.4-12**
 - 🐛 FIX: Add back autoprefixer.
 
