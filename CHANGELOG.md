@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.1.4-14**
+- 👌 IMPROVE: Change favicon.
+
 **v0.1.4-13**
 - 🚀 RELEASE: Update dependencies.
 
