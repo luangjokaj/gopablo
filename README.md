@@ -100,7 +100,6 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
 To install GoPablo create a directory for the new website and from there run the command to generate the file structure:
 ```
 npx gopablo
-
 ```
 That's it 🍾 easy as that. Now start the development workflow: [Start Workflow](#start-workflow)
 
