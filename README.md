@@ -1,4 +1,4 @@
-# [![GoPablo](https://raw.githubusercontent.com/luangjokaj/gopablo/master/src/assets/img/logo.svg?sanitize=true)](https://www.gopablo.co/)
+# [![GoPablo](https://gopablo.s3-eu-west-1.amazonaws.com/img/gopablo-repository-logo.svg#0)](https://www.gopablo.co/)
 
 [![Version](https://img.shields.io/github/package-json/v/luangjokaj/gopablo)](https://www.gopablo.co/) [![Dependencies](https://img.shields.io/david/luangjokaj/gopablo)](https://www.gopablo.co/)
 
