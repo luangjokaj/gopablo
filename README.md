@@ -93,7 +93,7 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
     └── package-lock.json        # Packages lock file
     └── package.json             # Node.js packages
     └── README.md                # You are reading this
-    └── server.js                # Express server
+    └── server.js                # Express server (in case you need it)
 ```
 
 ## Install GoPablo from NPM
