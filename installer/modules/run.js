@@ -16,12 +16,12 @@ const printNextSteps = require('./printNextSteps.js');
 const version = require('../package.json').version;
 
 module.exports = () => {
-	// Init.
+	// Init
 	clearConsole();
 
 	let upstreamUrl = `https://raw.githubusercontent.com/luangjokaj/gopablo/v${version}`;
 
-	// Files.
+	// Files
 	const filesToDownload = [
 		`${upstreamUrl}/.babelrc`,
 		`${upstreamUrl}/.gitignore`,
@@ -68,7 +68,7 @@ module.exports = () => {
 	const imgFiles = ['favicon.ico', 'icon-192.png', 'icon-512.png', 'logo.svg'];
 	const jsFiles = ['main.js', 'onclick.js'];
 
-	// Start.
+	// Start
 	console.log('\n');
 	console.log(
 		'📦 ',
@@ -84,7 +84,7 @@ module.exports = () => {
 		`1. Creating 🐺 GoPablo files inside → ${chalk.black.bgWhite(` ${theDir} `)}`
 	);
 
-	// Download.
+	// Download
 	Promise.all(filesToDownload.map((x) => download(x, `${theCWD}`))).then(
 		async () => {
 			if (!fs.existsSync('src')) {
@@ -134,13 +134,13 @@ module.exports = () => {
 			);
 			spinner.succeed();
 
-			// The npm install.
+			// The npm install
 			spinner.start('2. Installing npm packages...');
 			// await execa('npm', ['install', '--silent']);
 			await execa('npm', ['install']);
 			spinner.succeed();
 
-			// Done.
+			// Done
 			printNextSteps();
 		}
 	);

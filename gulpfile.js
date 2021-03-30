@@ -30,7 +30,7 @@ const purgecss = require("gulp-purgecss");
 /* -------------------------------------------------------------------------------------------------
 PostCSS Plugins
 -------------------------------------------------------------------------------------------------- */
-const pluginsDev = [
+const pluginsListDev = [
 	postcssImport,
 	postcssPresetEnv({
 		stage: 0,
@@ -43,7 +43,7 @@ const pluginsDev = [
 	postCSSMixins,
 	autoprefixer,
 ];
-const pluginsProd = [
+const pluginsListProd = [
 	postcssImport,
 	postcssPresetEnv({
 		stage: 0,
@@ -102,7 +102,7 @@ function stylesDev() {
 	return src("./src/assets/css/styles.css")
 		.pipe(plumber({ errorHandler: onError }))
 		.pipe(sourcemaps.init())
-		.pipe(postcss(pluginsDev))
+		.pipe(postcss(pluginsListDev))
 		.pipe(sourcemaps.write("."))
 		.pipe(dest("./build/assets/css"))
 		.pipe(browserSync.stream({ match: "**/*.css" }));
@@ -228,7 +228,7 @@ function processImages() {
 function stylesProd() {
 	return src("./src/assets/css/styles.css")
 		.pipe(plumber({ errorHandler: onError }))
-		.pipe(postcss(pluginsProd))
+		.pipe(postcss(pluginsListProd))
 		.pipe(
 			purgecss({
 				content: ["./src/**/*.html"],
