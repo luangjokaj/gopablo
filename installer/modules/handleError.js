@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 module.exports = (err) => {
 	if (err) {
-		console.log("ERROR: " + err);
+		console.log('ERROR: ' + err);
 	}
 };
