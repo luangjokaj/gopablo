@@ -82,7 +82,8 @@ function devServer() {
 	watch('./src/assets/js/**', series(footerScriptsDev, Reload));
 	watch('./src/assets/img/**', series(copyImagesDev, Reload));
 	watch('./src/assets/fonts/**', series(copyFontsDev, Reload));
-	watch('./src/**/*.html', series(stylesDev, staticFilesDev, Reload));
+	watch('./src/includes/*.html', series(stylesDev, staticFilesDev, Reload));
+	watch('./src/*.html', series(stylesDev, staticFilesDev, Reload));
 }
 
 function Reload(done) {
