@@ -31,7 +31,9 @@ module.exports = () => {
 
 		`${upstreamUrl}/src/index.html`,
 
+		`${upstreamUrl}/src/etc/htaccess.txt`,
 		`${upstreamUrl}/src/etc/manifest.json`,
+		`${upstreamUrl}/src/etc/robots.txt`,
 
 		`${upstreamUrl}/src/includes/content.html`,
 		`${upstreamUrl}/src/includes/footer.html`,
@@ -42,8 +44,6 @@ module.exports = () => {
 		`${upstreamUrl}/src/assets/css/styles.css`,
 
 		`${upstreamUrl}/src/assets/img/favicon.ico`,
-		`${upstreamUrl}/src/assets/img/icon-192.png`,
-		`${upstreamUrl}/src/assets/img/icon-512.png`,
 		`${upstreamUrl}/src/assets/img/logo.svg`,
 
 		`${upstreamUrl}/src/assets/js/main.js`,
@@ -53,7 +53,7 @@ module.exports = () => {
 	// Organise file structure
 	const dotFiles = ['.babelrc', '.gitignore', '.stylelintrc', '.editorconfig'];
 	const srcFiles = ['index.html'];
-	const etcFiles = ['manifest.json'];
+	const etcFiles = ['htaccess.txt', 'manifest.json', 'robots.txt'];
 	const includesFiles = [
 		'content.html',
 		'footer.html',
@@ -61,7 +61,7 @@ module.exports = () => {
 		'helmet.html',
 	];
 	const cssFiles = ['gopablo.css', 'styles.css'];
-	const imgFiles = ['favicon.ico', 'icon-192.png', 'icon-512.png', 'logo.svg'];
+	const imgFiles = ['favicon.ico', 'logo.svg'];
 	const jsFiles = ['main.js', 'onclick.js'];
 
 	// Start

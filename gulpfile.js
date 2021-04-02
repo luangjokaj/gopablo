@@ -245,15 +245,14 @@ function stylesProd() {
 }
 
 function copyEtcProd() {
-	return src('./src/etc/manifest.json').pipe(dest('./dist'));
+	return src('./src/etc/**').pipe(dest('./dist'));
 }
 
 function bustCaches() {
 	return src(['./dist/**'])
 		.pipe(
 			RevAll.revision({
-				dontRenameFile: [/^\/favicon.ico$/g, '.html'],
-				dontUpdateReference: [/^\/favicon.ico$/g, '.html'],
+				dontRenameFile: [/^\/favicon.ico$/g, '.html', '.txt', '.json'],
 			})
 		)
 		.pipe(dest('./dist'))
