@@ -252,7 +252,8 @@ function bustCaches() {
 	return src(['./dist/**'])
 		.pipe(
 			RevAll.revision({
-				dontRenameFile: [/^\/favicon.ico$/g, '.html', '.txt', '.json'],
+				dontRenameFile: ['.ico', '.html', '.txt', '.json'],
+				dontUpdateReference: ['.ico', '.html', '.txt', '.json'],
 			})
 		)
 		.pipe(dest('./dist'))
