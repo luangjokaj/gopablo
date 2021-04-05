@@ -39,7 +39,7 @@
 		"aos": "^2.3.4",
 		"autoprefixer": "^10.2.5",
 		"browser-sync": "^2.26.14",
-		"cherry-postcss": "^0.0.2-4",
+		"cherry-postcss": "^0.0.2-5",
 		"connect-modrewrite": "^0.10.2",
 		"cssnano": "^4.1.10",
 		"del": "^6.0.0",
