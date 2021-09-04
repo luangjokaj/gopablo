@@ -1,6 +1,6 @@
 {
 	"name": "gopablo",
-	"version": "0.1.5-2",
+	"version": "0.1.5-3",
 	"description": "Create optimized static websites.",
 	"keywords": [
 		"babel",
@@ -26,17 +26,19 @@
 	"homepage": "https://www.gopablo.co",
 	"repository": "https://github.com/luangjokaj/gopablo",
 	"main": "./installer/index.js",
+	"type": "module",
+	"node": "^12.20.0 || ^14.13.1 || >=16.0.0",
 	"bin": {
 		"gopablo": "./installer/index.js"
 	},
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
 	"dependencies": {
-		"chalk": "^4.1.1",
-		"commander": "^7.2.0",
+		"chalk": "^4.1.2",
+		"commander": "^8.1.0",
 		"download": "^8.0.0",
 		"execa": "^5.1.1",
-		"ora": "^5.4.1",
+		"ora": "^6.0.0",
 		"prompts": "^2.4.1"
 	}
 }
