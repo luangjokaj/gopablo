@@ -36,7 +36,7 @@ program
 	});
 
 	if (response.value) {
-		// If below Node 8
+		// If below Node 12
 		if (12 > major) {
 			console.error(
 				chalk.red(
