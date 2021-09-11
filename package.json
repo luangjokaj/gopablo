@@ -1,6 +1,6 @@
 {
 	"name": "gopablo",
-	"version": "0.1.5-3",
+	"version": "0.1.5-4",
 	"description": "Create optimized static websites.",
 	"keywords": [
 		"babel",
@@ -35,7 +35,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"chalk": "^4.1.2",
-		"commander": "^8.1.0",
+		"commander": "^8.2.0",
 		"download": "^8.0.0",
 		"execa": "^5.1.1",
 		"ora": "^6.0.0",

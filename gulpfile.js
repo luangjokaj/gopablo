@@ -4,27 +4,29 @@ GoPablo - Static site generator
 Contributors: Luan Gjokaj, Sherif Saleh
 
 -------------------------------------------------------------------------------------------------- */
-const { gulp, series, parallel, dest, src, watch } = require('gulp');
-const babel = require('gulp-babel');
-const browserSync = require('browser-sync').create();
-const concat = require('gulp-concat');
-const cssnano = require('cssnano');
-const del = require('del');
-const fileinclude = require('gulp-file-include');
-const gutil = require('gulp-util');
-const htmlmin = require('gulp-htmlmin');
-const imagemin = require('gulp-imagemin');
-const modRewrite = require('connect-modrewrite');
-const plumber = require('gulp-plumber');
-const postcss = require('gulp-postcss');
-const postcssImport = require('postcss-import');
-const postCSSMixins = require('postcss-mixins');
-const autoprefixer = require('autoprefixer');
-const postcssPresetEnv = require('postcss-preset-env');
-const RevAll = require('gulp-rev-all');
-const sourcemaps = require('gulp-sourcemaps');
-const uglify = require('gulp-uglify');
-const purgecss = require('gulp-purgecss');
+import pkg from 'gulp';
+import babel from 'gulp-babel';
+import browserSync from 'browser-sync';
+import concat from 'gulp-concat';
+import cssnano from 'cssnano';
+import del from 'del';
+import fileinclude from 'gulp-file-include';
+import gutil from 'gulp-util';
+import htmlmin from 'gulp-htmlmin';
+import imagemin from 'gulp-imagemin';
+import modRewrite from 'connect-modrewrite';
+import plumber from 'gulp-plumber';
+import postcss from 'gulp-postcss';
+import postcssImport from 'postcss-import';
+import postCSSMixins from 'postcss-mixins';
+import autoprefixer from 'autoprefixer';
+import postcssPresetEnv from 'postcss-preset-env';
+import RevAll from 'gulp-rev-all';
+import sourcemaps from 'gulp-sourcemaps';
+import uglify from 'gulp-uglify';
+import purgecss from 'gulp-purgecss';
+
+const { gulp, series, parallel, dest, src, watch } = pkg;
 
 //--------------------------------------------------------------------------------------------------
 /* -------------------------------------------------------------------------------------------------
@@ -55,7 +57,7 @@ const pluginsListProd = [
 	}),
 	postCSSMixins,
 	autoprefixer,
-	require('cssnano')(),
+	cssnano(),
 ];
 
 //--------------------------------------------------------------------------------------------------
@@ -146,7 +148,7 @@ function staticFilesDev() {
 		.pipe(dest('./build'));
 }
 
-exports.dev = series(
+const dev = series(
 	copyImagesDev,
 	copyFontsDev,
 	stylesDev,
@@ -155,6 +157,8 @@ exports.dev = series(
 	staticFilesDev,
 	devServer
 );
+dev.displayName = 'dev';
+export { dev };
 
 /* -------------------------------------------------------------------------------------------------
 Production Tasks
@@ -215,11 +219,7 @@ function copyImagesProd() {
 function processImages() {
 	return src(['./dist/assets/img/**'])
 		.pipe(plumber({ errorHandler: onError }))
-		.pipe(
-			imagemin([imagemin.svgo({ plugins: [{ removeViewBox: true }] })], {
-				verbose: true,
-			})
-		)
+		.pipe(imagemin())
 		.pipe(dest('./dist/assets/img'));
 }
 
@@ -264,7 +264,7 @@ function bustCaches() {
 		});
 }
 
-exports.prod = series(
+const prod = series(
 	cleanProd,
 	copyFontsProd,
 	headerScriptsProd,
@@ -276,6 +276,8 @@ exports.prod = series(
 	copyEtcProd,
 	bustCaches
 );
+prod.displayName = 'prod';
+export { prod };
 
 /* -------------------------------------------------------------------------------------------------
 Utility Tasks
@@ -291,7 +293,7 @@ Messages
 -------------------------------------------------------------------------------------------------- */
 const errorMsg = '\x1b[41mError\x1b[0m';
 const filesGenerated =
-	'Your production file are generated in: \x1b[1m' + __dirname + '/dist/ ✅';
+	'Your production file are generated in: \x1b[1m' + '/dist/ ✅';
 
 const staticBuild = '\x1b[42m\x1b[1m🐺 GoPablo\x1b[0m';
 const staticBuildUrl = '\x1b[2m - https://www.gopablo.co/\x1b[0m';
