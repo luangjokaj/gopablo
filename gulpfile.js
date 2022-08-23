@@ -9,7 +9,7 @@ import babel from 'gulp-babel';
 import browserSync from 'browser-sync';
 import concat from 'gulp-concat';
 import cssnano from 'cssnano';
-import del from 'del';
+import { deleteAsync } from 'del';
 import fileinclude from 'gulp-file-include';
 import gutil from 'gulp-util';
 import htmlmin from 'gulp-htmlmin';
@@ -164,7 +164,7 @@ export { dev };
 Production Tasks
 -------------------------------------------------------------------------------------------------- */
 async function cleanProd() {
-	await del(['./dist']);
+	deleteAsync(['./dist']);
 }
 
 function copyFontsProd() {
