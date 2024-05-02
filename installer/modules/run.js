@@ -79,15 +79,15 @@ const run = () => {
 	console.log(
 		'📦 ',
 		chalk.black.bgYellow(
-			` Downloading 🐺 GoPablo files in: → ${chalk.bgGreen(` ${theDir} `)}\n`
+			` Downloading 🐺 GoPablo files in: → ${chalk.bgGreen(` ${theDir} `)}\n`,
 		),
 		chalk.dim(`\n In the directory: ${theCWD}\n`),
-		chalk.dim('This might take a couple of minutes.\n')
+		chalk.dim('This might take a couple of minutes.\n'),
 	);
 
 	const spinner = ora({ text: '' });
 	spinner.start(
-		`1. Creating 🐺 GoPablo files inside → ${chalk.black.bgWhite(` ${theDir} `)}`
+		`1. Creating 🐺 GoPablo files inside → ${chalk.black.bgWhite(` ${theDir} `)}`,
 	);
 
 	// Download
@@ -102,41 +102,44 @@ const run = () => {
 					'src/assets/css',
 					'src/assets/img',
 					'src/assets/js',
+					'src/assets/fonts',
 				]);
 			}
 
 			dotFiles.map((x) =>
 				fs.rename(`${theCWD}/${x.slice(1)}`, `${theCWD}/${x}`, (err) =>
-					handleError(err)
-				)
+					handleError(err),
+				),
 			);
 			srcFiles.map((x) =>
-				fs.rename(`${theCWD}/${x}`, `${theCWD}/src/${x}`, (err) => handleError(err))
+				fs.rename(`${theCWD}/${x}`, `${theCWD}/src/${x}`, (err) =>
+					handleError(err),
+				),
 			);
 			etcFiles.map((x) =>
 				fs.rename(`${theCWD}/${x}`, `${theCWD}/src/etc/${x}`, (err) =>
-					handleError(err)
-				)
+					handleError(err),
+				),
 			);
 			includesFiles.map((x) =>
 				fs.rename(`${theCWD}/${x}`, `${theCWD}/src/includes/${x}`, (err) =>
-					handleError(err)
-				)
+					handleError(err),
+				),
 			);
 			cssFiles.map((x) =>
 				fs.rename(`${theCWD}/${x}`, `${theCWD}/src/assets/css/${x}`, (err) =>
-					handleError(err)
-				)
+					handleError(err),
+				),
 			);
 			imgFiles.map((x) =>
 				fs.rename(`${theCWD}/${x}`, `${theCWD}/src/assets/img/${x}`, (err) =>
-					handleError(err)
-				)
+					handleError(err),
+				),
 			);
 			jsFiles.map((x) =>
 				fs.rename(`${theCWD}/${x}`, `${theCWD}/src/assets/js/${x}`, (err) =>
-					handleError(err)
-				)
+					handleError(err),
+				),
 			);
 			spinner.succeed();
 
@@ -147,7 +150,7 @@ const run = () => {
 
 			// Done
 			printNextSteps();
-		}
+		},
 	);
 };
 

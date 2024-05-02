@@ -4,7 +4,7 @@ const printNextSteps = () => {
 	console.log('\n\n✅ ', chalk.black.bgGreen(' All done! Happy coding. \n'));
 	console.log(
 		'Installer has added 🐺 GoPablo files to the current directory.  ',
-		'\nInside this directory, you can run this command:'
+		'\nInside this directory, you can run this command:',
 	);
 
 	// Scripts
@@ -15,13 +15,13 @@ const printNextSteps = () => {
 		'\n\n',
 		'	Use to compile and run your files.',
 		'\n',
-		'	Watches for any changes and reports back any errors in your code.'
+		'	Watches for any changes and reports back any errors in your code.',
 	);
 
 	// Support
 	console.log('\n✊ ', chalk.black.bgYellow(' Support GoPablo \n'));
 	console.log(
-		'Like GoPablo? Check out our other free and open source repositories: \n'
+		'Like GoPablo? Check out our other free and open source repositories: \n',
 	);
 	console.log(
 		`	${chalk.yellow('Cherry → ')} https://bit.ly/3sEr75P`,
@@ -47,7 +47,7 @@ const printNextSteps = () => {
 		`	${chalk.green('Powered by Riangle → ')} https://bit.ly/2P5i26I`,
 		'\n',
 		'\n',
-		`	${chalk.red('Thank you for using 🐺 GoPablo → ')} https://www.gopablo.co`
+		`	${chalk.red('Thank you for using 🐺 GoPablo → ')} https://www.gopablo.co`,
 	);
 
 	// Get started
@@ -55,12 +55,12 @@ const printNextSteps = () => {
 	console.log(' You can start: \n');
 	console.log(
 		` ${chalk.dim('1.')} Editing your new website: ${chalk.green(
-			`${process.cwd()}/src`
-		)}`
+			`${process.cwd()}/src`,
+		)}`,
 	);
 	console.log(
 		` ${chalk.dim('2.')} Running: ${chalk.green('npm')} run dev`,
-		'\n\n'
+		'\n\n',
 	);
 	process.exit();
 };

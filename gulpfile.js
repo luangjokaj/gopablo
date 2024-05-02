@@ -127,7 +127,7 @@ function footerScriptsDev() {
 		.pipe(
 			babel({
 				presets: ['@babel/preset-env'],
-			})
+			}),
 		)
 		.pipe(concat('footer-bundle.js'))
 		.pipe(sourcemaps.write('.'))
@@ -143,7 +143,7 @@ function staticFilesDev() {
 					prefix: '@@',
 					basepath: '@file',
 				},
-			})
+			}),
 		)
 		.pipe(dest('./build'));
 }
@@ -155,7 +155,7 @@ const dev = series(
 	headerScriptsDev,
 	footerScriptsDev,
 	staticFilesDev,
-	devServer
+	devServer,
 );
 dev.displayName = 'dev';
 export { dev };
@@ -185,7 +185,7 @@ function footerScriptsProd() {
 		.pipe(
 			babel({
 				presets: ['@babel/preset-env'],
-			})
+			}),
 		)
 		.pipe(concat('footer-bundle.js'))
 		.pipe(uglify())
@@ -201,13 +201,13 @@ function staticFilesProd() {
 					prefix: '@@',
 					basepath: '@file',
 				},
-			})
+			}),
 		)
 		.pipe(
 			htmlmin({
 				collapseWhitespace: true,
 				ignoreCustomFragments: [/<%[\s\S]*?%>/, /<\?[=|php]?[\s\S]*?\?>/],
-			})
+			}),
 		)
 		.pipe(dest('./dist'));
 }
@@ -239,7 +239,7 @@ function stylesProd() {
 						extensions: ['css', 'html'],
 					},
 				],
-			})
+			}),
 		)
 		.pipe(dest('./dist/assets/css'));
 }
@@ -254,7 +254,7 @@ function bustCaches() {
 			RevAll.revision({
 				dontRenameFile: ['.ico', '.html', '.txt', '.json'],
 				dontUpdateReference: ['.ico', '.html', '.txt', '.json'],
-			})
+			}),
 		)
 		.pipe(dest('./dist'))
 		.on('end', () => {
@@ -274,7 +274,7 @@ const prod = series(
 	processImages,
 	stylesProd,
 	copyEtcProd,
-	bustCaches
+	bustCaches,
 );
 prod.displayName = 'prod';
 export { prod };

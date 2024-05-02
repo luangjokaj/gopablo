@@ -31,7 +31,7 @@ program
 		type: 'confirm',
 		name: 'value',
 		message: `Do you want to install ${chalk.white.bgGreen(
-			'🐺 GoPablo'
+			'🐺 GoPablo',
 		)} in the current directory?\n${chalk.red(process.cwd())}`,
 	});
 
@@ -44,8 +44,8 @@ program
 						currentNodeVersion +
 						'.\n' +
 						'Install GoPablo requires Node 12 or higher. \n' +
-						'Kindly, update your version of Node.'
-				)
+						'Kindly, update your version of Node.',
+				),
 			);
 			process.exit(1);
 		}
